@@ -1,0 +1,67 @@
+.management {
+    position: relative;
+    padding-bottom: 128px;
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        @include size(120px, 56px);
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    &-prev,
+    &-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include size(56px, 56px);
+        border: 1px solid $gray80;
+        border-radius: 50%;
+    }
+
+    &-item:hover .management-photo img {
+        filter: grayscale(0);
+    }
+
+    &-item:hover .management-photo {
+        background-position: 0 100%;
+    }
+
+    &-item:hover .management-name {
+        color: $red;
+    }
+
+    &-title {
+        margin-bottom: 32px;
+    }
+
+    &-photo {
+        margin-bottom: 16px;
+        padding-top: 34px;
+        text-align: center;
+        border-radius: 24px;
+        background-color: $black90;
+        background-image: linear-gradient(transparent 50%,$red 50%);
+        background-size: 200% 200%;
+        background-repeat: no-repeat;
+        transition: .5s;
+
+        img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: .3s;
+        }
+    }
+
+    &-name {
+        font-weight: 600;
+        transition: .3s;
+    }
+
+    &-post {
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,47 @@
+.info {
+   padding-bottom: 80px;
+
+   @include breakpoint(medium) {
+      padding-bottom: 192px;
+   }
+
+   & .text {
+      @include font(16px, 24px);
+      color: $red;
+      margin-bottom: 24px;
+
+      @include breakpoint(medium) {
+         margin-bottom: 48px;
+      }
+
+      @include breakpoint(large) {
+         padding-top: 6px;
+      }
+   }
+   & .title {
+      margin-bottom: 32px;
+
+      @include breakpoint(medium) {
+         margin-bottom: 96px;
+      }
+   }
+   & .item {
+      padding-top: 16px;
+      margin-bottom: 48px;
+      border-top: 1px solid $white;
+
+      @include breakpoint(medium) {
+         padding-top: 32px;
+      }
+   }
+   & .amount {
+      @include font(80px, 72px, 500);
+      color: $red;
+      margin-bottom: 8px;
+
+      @include breakpoint(medium) {
+         @include font(112px, 96px, 500);
+         margin-bottom: 16px;
+      }
+   }
+}

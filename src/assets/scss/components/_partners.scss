@@ -1,0 +1,33 @@
+.partners {
+   padding-bottom: 112px;
+
+   @include breakpoint(medium) {
+      padding-bottom: 224px;
+   }
+
+   &-title {
+      margin-bottom: 48px;
+   }
+
+   &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $black90;
+      border-radius: 50%;
+
+      &::after {
+         content: '';
+         display: block;
+         padding-top: 100%;
+      }
+   }
+
+   &-logo {
+      @include size(96px, 96px);
+
+      @include breakpoint(medium) {
+            @include size(128px, 128px);
+      }
+   }
+}

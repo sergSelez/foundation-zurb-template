@@ -1,0 +1,23 @@
+.social {
+   display: flex;
+   gap: 8px;
+
+   &__link {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       @include size(55px, 55px);
+       border: 1px solid $black70;
+       border-radius: 50%;
+       transition: .2s;
+
+       &:hover {
+           background-color: $red;
+           border-color: $red;
+       }
+   }
+
+   &__icon {
+       @include size(24px, 24px);
+   }
+}

@@ -1,0 +1,61 @@
+$black70: #778390;
+$gray80: #394050; //new
+// $black80: #161C29;
+$black90: #232A39;
+$black100: #0E121E;
+$blue: #1F72FA;
+$light-green: #9DCE36;
+$light-gray: #FAFAFA;
+$light-red: #FF4C33;
+$orange: #FFCD00;
+// $red: #FF6060;
+$redhover: #CE4848;
+$white: #FFFFFF;
+
+@mixin font($size, $lineHeight, $weight: 400) {
+    font-size: $size;
+    line-height: $lineHeight;
+    font-weight: $weight;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    @include breakpoint(medium) {
+        padding: 0 32px;
+    }
+
+    @include breakpoint(xxlarge) {
+        padding: 0 88px;
+    }
+}
+
+.main-text {
+    @include font(48px, 56px, 500);
+    color: $white;
+}
+
+.medium-text {
+    @include font(24px, 32px, 600);
+    color: $white;
+}
+
+.small-text {
+    @include font(16px, 24px);
+    color: $white;
+
+    &--info {
+        color: $red;
+    }
+
+    &-gray {
+        color: $black70;
+    }
+}

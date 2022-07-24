@@ -1,0 +1,22 @@
+.footer {
+   border-top: 1px solid $white;
+   padding: 24px 0 32px;
+
+   .red-button-small {
+      display: none;
+
+      @include breakpoint(medium) {
+         display: flex;
+         flex-shrink: 0;
+         margin-left: 34px;
+      }
+   }
+
+   .social {
+      justify-content: center;
+
+      @include breakpoint(medium) {
+         justify-content: start;
+      }
+   }
+}

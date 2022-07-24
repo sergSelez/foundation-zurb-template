@@ -1,0 +1,46 @@
+data:
+  -
+    icon: vtb.svg
+    alt: ВТБ
+  -
+    icon: deloitte.svg
+    alt: Deloitte.
+  -
+    icon: kaspersky.svg
+    alt: Kaspersky
+  -
+    icon: a.svg
+    alt: A
+  -
+    icon: akado.svg
+    alt: Akado
+  -
+    icon: ingka.svg
+    alt: Ingka
+  -
+    icon: raiffeisen.svg
+    alt: Raiffeisen
+  -
+    icon: sber.svg
+    alt: Сбер Мегамаркет
+  -
+    icon: seagate.svg
+    alt: Seagate
+  -
+    icon: b.svg
+    alt: b
+  -
+    icon: c.svg
+    alt: c
+  -
+    icon: cmd.svg
+    alt: CMD
+  -
+    icon: kalina.svg
+    alt: Калинов Родник
+  -
+    icon: mebelniy.svg
+    alt: Первый мебельный
+  -
+    icon: multifoto.svg
+    alt: Мульти Фото

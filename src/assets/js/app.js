@@ -12,6 +12,35 @@ require('foundation-sites');
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
+import './lib/slick'
 
+$('.management-slider').slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   mobileFirst: true,
+   prevArrow: $('.management-prev'),
+   nextArrow: $('.management-next'),
+   responsive: [
+      {
+         breakpoint: 500,
+         settings: {
+            slidesToShow: 2,
+         }
+      },
+      {
+         breakpoint: 800,
+         settings: {
+            slidesToShow: 3,
+         }
+      },
+      {
+         breakpoint: 1024,
+         settings: {
+            slidesToShow: 4,
+         }
+      }
+   ]
+});
 
 $(document).foundation();

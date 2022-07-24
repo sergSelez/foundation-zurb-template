@@ -1,0 +1,42 @@
+.about {
+   margin: 168px 0 90px;
+
+   & .title {
+      margin-bottom: 24px;
+   }
+   & .text {
+      margin-bottom: 7px;
+   }
+   & .video {
+      width: 100%;
+      margin-bottom: 15px;
+   }
+
+   .download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 224px;
+      height: 224px;
+      margin: 0 auto;
+      background-color: $red;
+      border-radius: 50%;
+   
+      &-arrow {
+         width: 24px;
+         height: 24px;
+         margin-bottom: 16px;
+      }
+      &-label {
+         @include font(14px, 16px, 700);
+         color: $white;
+      }
+      &-info {
+         @include font(12px, 16px);
+         color: $white;
+         opacity: .7;
+         margin-top: 24px;
+      }
+   }
+}

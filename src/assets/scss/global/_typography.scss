@@ -1,0 +1,31 @@
+@font-face {
+   font-family: 'VelaSans';
+   font-weight: 400;
+   src: local('VelaSans'),
+      url('assets/fonts/VelaSans-Regular.woff2') format('woff2'),
+      url('assets/fonts/VelaSans-Regular.woff') format('woff'),
+}
+
+@font-face {
+   font-family: 'VelaSans';
+   font-weight: 500;
+   src: local('VelaSans'),
+      url('assets/fonts/VelaSans-Medium.woff2') format('woff2'),
+      url('assets/fonts/VelaSans-Medium.woff') format('woff'),
+}
+
+@font-face {
+   font-family: 'VelaSans';
+   font-weight: 600;
+   src: local('VelaSans'),
+      url('assets/fonts/VelaSans-SemiBold.woff2') format('woff2'),
+      url('assets/fonts/VelaSans-SemiBold.woff') format('woff'),
+}
+
+@font-face {
+   font-family: 'VelaSans';
+   font-weight: 700;
+   src: local('VelaSans'),
+      url('../fonts/VelaSans-Bold.woff2') format('woff2'),
+      url('../fonts/VelaSans-Bold.woff') format('woff'),
+}

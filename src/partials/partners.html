@@ -1,0 +1,12 @@
+<section class="partners">
+   <h1 class="partners-title">Работаем с&nbsp;лидерами рынка</h1>
+   <div class="grid-x grid-margin-x grid-margin-y">
+      {{#each partners.data}}
+         <div class="cell small-6 medium-4 large-2">
+            <div class="partners-item">
+               <img class="partners-logo" src="{{root}}assets/img/partners/{{icon}}" alt="{{alt}}">
+            </div>
+         </div>
+      {{/each}}
+   </div>
+</section>

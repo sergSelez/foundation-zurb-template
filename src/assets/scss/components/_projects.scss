@@ -1,0 +1,200 @@
+// .projects {
+//    display: flex;
+//    justify-content: space-between;
+
+//    &__title {
+//        width: 224px;
+//        margin-right: 30px;
+//    }
+
+//    &__wrapper {
+//        width: 1064px;
+//        display: flex;
+//        flex-wrap: wrap;
+//        gap: 16px;
+//    }
+
+//    &__item {
+//        display: block;
+//        position: relative;
+//        @include size(344px, 344px);
+//        padding: 30px;
+//        text-align: center;
+//        text-decoration: none;
+//        background-color: $black90;
+//        border-radius: 24px;
+//        background-size: 200% 200%;
+//        background-repeat: no-repeat;
+//        transition: .5s;
+
+//        &:hover .small-text--gray {
+//            color: $white;
+//        }
+
+//        &:hover .small-text--dark,
+//        &:hover .projects__name--dark {
+//                color: $black100;
+//            }
+
+//        &:hover .projects__logo--light {
+//            fill: $white;
+//        }
+
+//        &:hover .projects__logo--dark {
+//            fill: $black100;
+//        }
+
+//        &--coders {
+//            background-image: linear-gradient(transparent 50%, $blue 50%);
+//        }
+
+//        &--quolitics {
+//            background-image: linear-gradient(transparent 50%, $light-green 50%);
+//        }
+
+//        &--cutter {
+//            background-image: linear-gradient(transparent 50%, $light-gray 50%);
+//        }
+
+//        &--sellers {
+//            background-image: linear-gradient(transparent 50%, $light-red 50%);
+//        }
+
+//        &--wikiworks {
+//            background-image: linear-gradient(transparent 50%, $orange 50%);
+//        }
+       
+//        &:hover {
+//            background-position: 0 100%;
+//        }
+//    }
+   
+//    &__logo {
+//        @include size(168px, 168px);
+//        margin-bottom: 24px;
+//        transition: .3s;
+
+//        &--coders {
+//            fill: $blue;
+//        }
+
+//        &--cutter {
+//            fill: $white;
+//        }
+
+//        &--sellers {
+//            fill: $light-red;
+//        }
+
+//        &--wikiworks {
+//            fill: $orange;
+//        }
+//    }
+
+//    &__name {
+//        @include font(24px, 32px, 600);
+//        color: $white;
+//        margin-bottom: 8px;
+//        transition: .3s;
+//    }
+
+//    &__text {
+//        transition: .4s;
+//    }
+// }
+
+.projects {
+   padding-bottom: 116px;
+
+   &-title {
+      margin-bottom: 32px;
+   }
+
+   &-link {
+      display: block;
+      padding: 24px;
+      text-align: center;
+      text-decoration: none;
+      background-color: $black90;
+      border-radius: 24px;
+      background-size: 200% 200%;
+      background-repeat: no-repeat;
+      transition: .5s;
+      color: $white;
+
+      @include breakpoint(medium) {
+         padding: 32px 20px;
+      }
+
+      &:hover .small-text {
+         color: $white;
+      }
+
+      &-resaltica:hover .projects-name,
+      &-wikiworks:hover .projects-name {
+         color: $black100;
+      }
+
+      &:hover .projects__logo--light {
+         fill: $white;
+      }
+
+      &:hover .projects__logo--dark {
+         fill: $black100;
+      }
+
+      &-coders {
+         background-image: linear-gradient(transparent 50%, $blue 50%);
+      }
+
+      &-quolitics {
+         background-image: linear-gradient(transparent 50%, $light-green 50%);
+      }
+
+      &-resaltica {
+         background-image: linear-gradient(transparent 50%, $light-gray 50%);
+      }
+
+      &-sellers {
+         background-image: linear-gradient(transparent 50%, $light-red 50%);
+      }
+
+      &-wikiworks {
+         background-image: linear-gradient(transparent 50%, $orange 50%);
+      }
+      
+      &:hover {
+         background-position: 0 100%;
+         color: $white;
+      }
+
+      &-coders {
+
+         .projects-logo {
+            fill: $blue;
+         }
+
+         &:hover .projects-logo {
+            fill: $white;
+         }
+      }
+   }
+
+   &-logo {
+      @include size(120px, 120px);
+      margin-bottom: 24px;
+      transition: .3s;
+
+      @include breakpoint(medium) {
+         @include size(168px, 168px);
+      }
+   }
+
+   &-name {
+      margin-bottom: 8px;
+   }
+
+   .small-text-gray {
+      transition: .4s;
+   }
+}

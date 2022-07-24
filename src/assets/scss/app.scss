@@ -63,3 +63,20 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//styles
+
+@import 'components/main';
+@import 'components/header';
+@import 'components/about';
+@import 'components/info';
+@import 'components/projects';
+@import 'components/management';
+@import 'components/partners';
+@import 'components/address';
+@import 'components/footer';
+@import 'components/social';
+@import 'components/red-button';
+@import 'components/slick';
+@import 'components/slick-theme';
+@import 'global/typography';
