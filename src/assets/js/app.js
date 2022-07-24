@@ -43,4 +43,34 @@ $('.management-slider').slick({
    ]
 });
 
+$('.massmedia-slider').slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   mobileFirst: true,
+   prevArrow: $('.management-prev'),
+   nextArrow: $('.management-next'),
+   responsive: [
+      {
+         breakpoint: 500,
+         settings: {
+            slidesToShow: 2,
+         }
+      },
+      {
+         breakpoint: 800,
+         settings: {
+            slidesToShow: 3,
+            variableWidth: true
+         }
+      },
+      {
+         breakpoint: 1024,
+         settings: {
+            slidesToShow: 4,
+         }
+      }
+   ]
+})
+
 $(document).foundation();
