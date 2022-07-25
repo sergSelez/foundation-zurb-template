@@ -1,41 +1,61 @@
 .about {
-   margin: 168px 0 90px;
+   padding-bottom: 96px;
 
-   & .title {
+   &-title {
       margin-bottom: 24px;
    }
-   & .text {
-      margin-bottom: 7px;
-   }
-   & .video {
-      width: 100%;
-      margin-bottom: 15px;
+
+   &-text {
+      color: $black70;
    }
 
-   .download {
+   &-video {
+      width: 100%;
+   }
+
+   &-buttons {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-align(justify, bottom);
+   }
+
+   &-arrow-down {
+      display: flex;
+      @include flex-align(center, middle);
+      @include size(88px, 88px);
+      border: 1px solid $gray80;
+      border-radius: 50%;
+   }
+
+   &-download {
+      display: flex;
+      @include flex-align(center, middle);
       flex-direction: column;
-      width: 224px;
-      height: 224px;
+      @include size(224px, 224px);
       margin: 0 auto;
       background-color: $red;
       border-radius: 50%;
-   
+      @include font(14px, 16px, 700);
+      color: $white;
+      transition: .3s background-color;
+      @include breakpoint(medium) {
+         margin: 0;
+      }
+
+      &:hover {
+         background-color: $redhover;
+         color: inherit;
+      }
+
+      &:active {
+         filter: sepia(20%);
+      }
+
       &-arrow {
-         width: 24px;
-         height: 24px;
          margin-bottom: 16px;
       }
-      &-label {
-         @include font(14px, 16px, 700);
-         color: $white;
-      }
+
       &-info {
          @include font(12px, 16px);
-         color: $white;
-         opacity: .7;
          margin-top: 24px;
       }
    }

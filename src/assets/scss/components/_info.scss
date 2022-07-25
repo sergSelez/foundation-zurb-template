@@ -5,8 +5,7 @@
       padding-bottom: 192px;
    }
 
-   & .text {
-      @include font(16px, 24px);
+   &-text {
       color: $red;
       margin-bottom: 24px;
 
@@ -18,23 +17,26 @@
          padding-top: 6px;
       }
    }
-   & .title {
+
+   &-title {
       margin-bottom: 32px;
 
       @include breakpoint(medium) {
          margin-bottom: 96px;
       }
    }
-   & .item {
+
+   &-item {
       padding-top: 16px;
-      margin-bottom: 48px;
+      margin-bottom: 42px;
       border-top: 1px solid $white;
 
       @include breakpoint(medium) {
          padding-top: 32px;
       }
    }
-   & .amount {
+
+   &-amount {
       @include font(80px, 72px, 500);
       color: $red;
       margin-bottom: 8px;

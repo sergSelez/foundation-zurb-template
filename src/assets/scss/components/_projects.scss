@@ -104,10 +104,10 @@
 // }
 
 .projects {
-   padding-bottom: 116px;
+   padding-bottom: 126px;
 
    &-title {
-      margin-bottom: 32px;
+      margin-bottom: 10px;
    }
 
    &-link {
@@ -181,7 +181,7 @@
    }
 
    &-logo {
-      @include size(120px, 120px);
+      @include size(168px, 168px);
       margin-bottom: 24px;
       transition: .3s;
 

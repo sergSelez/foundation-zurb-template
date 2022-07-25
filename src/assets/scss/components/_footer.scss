@@ -2,6 +2,15 @@
    border-top: 1px solid $white;
    padding: 24px 0 32px;
 
+   .button {
+      max-width: 320px;
+      margin: 0 auto;
+
+      @include breakpoint(medium) {
+         min-width: 254px;
+      }
+   }
+
    .red-button-small {
       display: none;
 
@@ -17,6 +26,15 @@
 
       @include breakpoint(medium) {
          justify-content: start;
+      }
+   }
+
+   &-year {
+      text-align: center;
+
+      @include breakpoint(medium) {
+         text-align: left;
+         margin-top: 80px;
       }
    }
 }

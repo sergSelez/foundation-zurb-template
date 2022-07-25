@@ -1,21 +1,33 @@
 .header {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 16px 24px;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
+   @include flex-align(justify, middle);
+   padding: 16px 0px 32px 0;
 
-   &__logo {
-      width: 124px;
-      height: 32px;
+   &-logo {
+      @include size(124px, 32px);
+
+      @include breakpoint(medium) {
+         @include size(217px, 56px);
+      }
    }
 
-   &__icon {
-      width: 16px;
-      height: 16px;
+   &-icon {
+      @include size(16px, 16px);
       margin-left: 16px;
+   }
+
+   &-fixed {
+      position: fixed;
+      height: 50px;
+      top: -50px;
+      left: 0;
+      right: 0;
+      background-color: black;
+      transition: .3s;
+      z-index: 10;
+
+      &.active {
+         top: 0;
+      }
    }
 }

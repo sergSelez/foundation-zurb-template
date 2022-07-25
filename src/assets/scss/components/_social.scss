@@ -4,8 +4,7 @@
 
    &__link {
        display: flex;
-       justify-content: center;
-       align-items: center;
+       @include flex-align(center, middle);
        @include size(55px, 55px);
        border: 1px solid $black70;
        border-radius: 50%;

@@ -13,6 +13,7 @@ require('foundation-sites');
 // the line below
 //import './lib/foundation-explicit-pieces';
 import './lib/slick'
+import './lib/scroll'
 
 $('.management-slider').slick({
    infinite: true,
@@ -48,26 +49,13 @@ $('.massmedia-slider').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
    mobileFirst: true,
-   prevArrow: $('.management-prev'),
-   nextArrow: $('.management-next'),
+   prevArrow: $('.massmedia-prev'),
+   nextArrow: $('.massmedia-next'),
    responsive: [
-      {
-         breakpoint: 500,
-         settings: {
-            slidesToShow: 2,
-         }
-      },
-      {
-         breakpoint: 800,
-         settings: {
-            slidesToShow: 3,
-            variableWidth: true
-         }
-      },
       {
          breakpoint: 1024,
          settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
          }
       }
    ]
